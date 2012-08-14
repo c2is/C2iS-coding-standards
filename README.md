@@ -18,24 +18,30 @@ $ pear install PHP_CodeSniffer
 $ pear config-show | grep php_dir
 ```
 
-3. Copy, symlink or check out this repo to a folder called C2iS inside the
-   phpcs `Standards` directory:
+3. Copy, symlink or check out this repo to a folder called Symphony2 inside the phpcs `Standards` directory:
 
 ```bash
 $ cd /path/to/pear/PHP/CodeSniffer/Standards
-$ git clone git@github.com:c2is/C2iS-coding-standards.git C2iS
+$ git clone git://github.com/opensky/Symfony2-coding-standard.git Symphony2
 ```
 
-4. Set C2iS as your default coding standard:
+4. Copy, symlink or check out this repo to a folder called C2iS inside the phpcs `Standards` directory:
+
+```bash
+$ cd /path/to/pear/PHP/CodeSniffer/Standards
+$ git clone git://github.com/c2is/C2iS-coding-standards.git C2iS
+```
+
+5. Set C2iS as your default coding standard:
 
 ```bash
 $ phpcs --config-set default_standard C2iS
 ```
 
-5. Profit!
+6. Profit!
 
 ```bash
-$ cd /path/to/c2is/project
+$ cd /path/to/your/project
 $ phpcs app src
 $ phpcs path/to/my/file.php
 ```
