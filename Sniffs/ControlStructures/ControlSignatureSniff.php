@@ -47,17 +47,19 @@ class C2iS_Sniffs_ControlStructures_ControlSignatureSniff extends PHP_CodeSniffe
     protected function getPatterns()
     {
         return array(
-            'tryEOL{EOL...EOL}EOLcatch (...)EOL{EOL',
-            'doEOL{EOL...EOL}EOLwhile (...);EOL',
-            'while (...)EOL{EOL',
-            'for (...)EOL{EOL',
-            'if (...)EOL{EOL',
-            'foreach (...)EOL{EOL',
-            'EOL}EOLelse if (...)EOL{EOL',
-            'EOL}EOLelseif (...)EOL{EOL',
-            'EOL}EOLelseEOL{EOL',
+          'tryEOL',
+          '{EOL...}',
+          'catch (...)EOL',
+          'doEOL',
+          'while (...);EOL',
+          'while (...)EOL',
+          'for (...)EOL',
+          'if (...)EOL',
+          'foreach (...)EOL',
+          '}EOLelse if (...)EOL',
+          '}EOLelseif (...)EOL',
+          '}EOLelseEOL',
         );
-
     }//end getPatterns()
 
 
