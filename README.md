@@ -18,14 +18,14 @@ $ pear install PHP_CodeSniffer
 $ pear config-show | grep php_dir
 ```
 
-3. Copy, symlink or check out this repo to a folder called Symphony2 inside the phpcs `Standards` directory:
+3. Copy, symlink or check out this repo to a folder called **Symphony2** inside the phpcs `Standards` directory:
 
 ```bash
 $ cd /path/to/pear/PHP/CodeSniffer/Standards
 $ git clone git://github.com/opensky/Symfony2-coding-standard.git Symphony2
 ```
 
-4. Copy, symlink or check out this repo to a folder called C2iS inside the phpcs `Standards` directory:
+4. Copy, symlink or check out this repo to a folder called **C2iS** inside the phpcs `Standards` directory:
 
 ```bash
 $ cd /path/to/pear/PHP/CodeSniffer/Standards
