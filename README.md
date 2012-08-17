@@ -6,39 +6,39 @@ A code standard to check against the C2iS coding standards, inspired by the [Sym
 Installation
 ------------
 
-1. Install phpcs:
+Install phpcs:
 
 ```bash
 $ pear install PHP_CodeSniffer
 ```
 
-2. Find your PEAR directory:
+Find your PEAR directory:
 
 ```bash
 $ pear config-show | grep php_dir
 ```
 
-3. Copy, symlink or check out this repo to a folder called **Symphony2** inside the phpcs `Standards` directory:
+Copy, symlink or check out this repo to a folder called **Symfony2** inside the phpcs `Standards` directory:
 
 ```bash
 $ cd /path/to/pear/PHP/CodeSniffer/Standards
-$ git clone git://github.com/opensky/Symfony2-coding-standard.git Symphony2
+$ git clone git://github.com/opensky/Symfony2-coding-standard.git Symfony2
 ```
 
-4. Copy, symlink or check out this repo to a folder called **C2iS** inside the phpcs `Standards` directory:
+Copy, symlink or check out this repo to a folder called **C2iS** inside the phpcs `Standards` directory:
 
 ```bash
 $ cd /path/to/pear/PHP/CodeSniffer/Standards
 $ git clone git://github.com/c2is/C2iS-coding-standards.git C2iS
 ```
 
-5. Set C2iS as your default coding standard:
+Set C2iS as your default coding standard:
 
 ```bash
 $ phpcs --config-set default_standard C2iS
 ```
 
-6. Profit!
+Profit!
 
 ```bash
 $ cd /path/to/your/project
